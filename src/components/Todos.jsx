@@ -49,7 +49,7 @@ const Todos = ({ name, Id, Input, todos, settodos, completed, setcompleted }) =>
   return (
 
     <div className=' flex gap-3 items-center '><input checked={checkedItems[Id] || false} onChange={() => handleCheckboxChange(Id)} className=' size-4' type="checkbox" name="Check" id={Id} />
-      <h1 className=' w-2/5 text-md'>{name}</h1>
+      <h1 className=' w-2/5 text-md break-all'>{name}</h1>
       <span className=' flex h-7 hover:bg-blue-600 w-9 bg-blue-500 items-center justify-center rounded-md cursor-pointer' onClick={() => { Edit(name, Id) }}><FaEdit /></span>
       <span className='flex h-7 hover:bg-blue-600 w-9 bg-blue-500 items-center justify-center rounded-md cursor-pointer' onClick={() => { Delete(Id) }}><MdDelete /></span>
 
