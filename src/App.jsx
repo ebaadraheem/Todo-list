@@ -89,7 +89,7 @@ function App() {
         <Navbar />
         <div className='  mb-8 w-full h-12 flex justify-center items-center '>
           <div className='flex h-11 w-4/6 px-5 bg-white justify-around items-center gap-3 rounded-md'>
-            <input ref={Input} className=' w-full  outline-none' type="text" placeholder='Add New...' name={"Todo"} value={temp.value} onChange={OnChange} onKeyDown={HandleKey} />
+            <input ref={Input} className='bg-white w-full  outline-none' type="text" placeholder='Add New...' name={"Todo"} value={temp.value} onChange={OnChange} onKeyDown={HandleKey} />
             <div className="flex h-8 w-16 bg-blue-500 items-center justify-center rounded-md cursor-pointer hover:bg-blue-600" onClick={Add}>Save</div>
           </div>
         </div>
